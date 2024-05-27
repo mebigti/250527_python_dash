@@ -22,7 +22,7 @@ data = {
                        "Leader F", "Leader G", "Leader H", "Leader I", "Leader J"],
     "Project Member": ["Member A", "Member B", "Member C", "Member D", "Member E",
                        "Member F", "Member G", "Member H", "Member I", "Member J"],
-    "Timestamp": [datetime(2024, 5, 27, 24, 0, 0) for _ in range(10)]
+    "Timestamp": [datetime(2024, 5, 27, 23, 59, 59) for _ in range(10)]
 }
 
 df = pd.DataFrame(data)
@@ -163,4 +163,4 @@ def modify_table(add_clicks, sub_clicks, delete_clicks, area, start_date, end_da
 
 # 서버 실행
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8080)
+    app.run_server(debug=True)
